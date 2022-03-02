@@ -1,4 +1,4 @@
-# Hamilton Cline
+# Jaehyun Jin
 
 ## Class Project Mobile Tech
 
