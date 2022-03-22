@@ -4,7 +4,7 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <title>WAY</title>
-   <base href="http://creativebyaustin.com/aau/wnm617/jin.jaehyun/">
+   <base href="/aau/wnm617/jin.jaehyun/">
 
    <link rel="stylesheet"  href="lib/css/jquery.mobile.structure-1.4.5.min.css">
    <link rel="stylesheet"  href="lib/css/app.css">
@@ -15,211 +15,229 @@
    <script src="lib/js/app.js"></script>
    <script src="lib/js/signin.js"></script>
 </head>
+
 <body>
 
+<!-- signin-->
    <section data-role="page" id="signin-page">
       <div data-role="main" class="display-flex flex-column">
          <div class="flex-stretch"></div>
-         <div style="text-align:center;margin-bottom:10vmin">
+                  <div style="text-align:center;margin-bottom:10vmin">
             <img src="lib/img/logo.png" alt="" style="width:50vmin;height:50vmin">
          </div>
-         <form id="signin-form" class="form" data-ajax="false">
+    
+            <form id="signin-form" class="form" data-ajax="false">
             <div class="form-control">
                <label for="signin-username" class="form-label">Username</label>
-               <input type="text" id="signin-username" data-role="none" class="form-input" placeholder="Type your Username">
+               <input type="text" id="signin-username" data-role="none" class="form-input" placeholder="Type Username">
             </div>
             <div class="form-control">
                <label for="signin-password" class="form-label">Password</label>
-               <input type="password" id="signin-password" data-role="none" class="form-input" placeholder="Type your Password">
+               <input type="password" id="signin-password" data-role="none" class="form-input" placeholder="Type Password">
             </div>
-            <!-- <input type="submit" data-role="none"> -->
+         <!--<input type="submit" data-role="none"> -->
             <div class="form-control">
-               <button type="submit" class="form-button" data-role="none">Submit</button>
+               <button type="submit" class="form-button" data-role="none">SUBMIT</button>
             </div>
-            <div class="form-control" style="text-align:center;font-size:0.8em;">
-               <p>New to the app? <a href="#signup-page">Sign Up</a></p>
-            </div>
+
+            <p class="signin-form-text"> New User? <a href="#signup-page">Sign Up</a></p>
          </form>
-      </div>
+         <div class="flex-stretch"></div>
+      
    </section>
+
+   <!-- signup page -->
 
    <section data-role="page" id="signup-page">
-      <div data-role="main" class="display-flex flex-column">
-         <div class="flex-stretch"></div>
-         <form id="signup-form" class="form" data-ajax="false">
+     <header data-role="header">
+          <h1>Create Account</h1>
+           <a href="#" data-rel="back">Back</a>
+        </header>            
+        <div data-role="main">
+            <form id="signup-form" class="form" data-ajax="false">
+
+                <div class="form-control">
+                    <label for="signup-username">Username</label>
+                    <input type="text" placeholder="Type your username" id="signup-username" data-role="none" class="form-input">
+                </div>
+                <div class="form-control">
+                    <label for="signup-password">Password</label>                    
+                    <input type="password" placeholder="Password" id="signup-password" data-role="none" class="form-input">
+                </div>
+
+
+      
             <div class="form-control">
-               <label for="signup-username" class="form-label">Username</label>
-               <input type="text" id="signup-username" data-role="none" class="form-input" placeholder="Type your Username">
+               <a href="#home-page" class="form-button">Sign Up</a>
             </div>
-            <div class="form-control">
-               <label for="signup-password" class="form-label">Password</label>
-               <input type="password" id="signup-password" data-role="none" class="form-input" placeholder="Type your Password">
-            </div>
-            <div class="form-control">
-               <label for="signup-password2" class="form-label">Confirm Password</label>
-               <input type="password" id="signup-password2" data-role="none" class="form-input" placeholder="Type your Password again">
-            </div>
-            <!-- <input type="submit" data-role="none"> -->
-            <div class="form-control">
-               <!-- <button type="button" class="form-button">Submit</button> -->
-               <a href="#recent-page" class="form-button">Sign Up</a>
-            </div>
-            <div class="form-control" style="text-align:center;font-size:0.8em;">
-               <p>Already have an account? <a href="#signin-page">Sign In</a></p>
-            </div>
+               
+
          </form>
-         <div class="flex-stretch"></div>
+         <!-- makes form go up<div class="flex-stretch"></div> -->
+         
       </div>
    </section>
 
 
-   <section data-role="page" id="recent-page">
-      <div data-role="main" class="map-placeholder">
-<!--          <div class="marker" style="position:absolute;top:30vh;left:20vw" data-activate="#map-drawer"> -->
-<!--             <img src="img/icons/marker.svg" alt="" class="icon"> -->  
+
+   <!-- home page-->
+   <section data-role="page" id="home-page">
+      <header data-role="header">
+         <h1>WAY</h1>
+      </header>
+      <div data-role="main">Your Potholes</div>
+
+        <div data-role="main" class="overscroll">
+        <div class="gallery-box">
+            <div class="display-grid flex-column">
+
+               <a href="#pothole1-profile-page"><div class="image-nav-1"></div></a>
+               <a href="#pothole2-profile-page"><div class="image-nav-2"></div></a>
+               <a href="#pothole3-profile-page"><div class="image-nav-3"></div></a>
+               <a href="#pothole4-profile-page"><div class="image-nav-4"></div></a>
+               <a href="#pothole5-profile-page"><div class="image-nav-5"></div></a>
+               <a href="#pothole6-profile-page"><div class="image-nav-6"></div></a>
+
+            </div>
          </div>
-      </div>
+   </div>
       <footer data-role="footer">
          <ul>
-            <li><a href="#recent-page">Map</a></li>
-            <li><a href="#list-page">List</a></li>
-            <li><a href="#user-profile-page">User Profile</a></li>
+            <li> <a href="#potholemap-page">Pothole Map</a></li>
+            <li> <a href="#add-pothole-page">Add New</a></li>
+            <li> <a href="#myboard-page">List</a></li>
          </ul>
       </footer>
+   </section>
 
-     <!--  <div class="modal" id="map-drawer">
-         <div class="modal-back transparent passthrough" data-deactivate="#map-drawer"></div>
-         <div class="modal-drawer left">
-            <div class="modal-head display-flex">
-               <div class="flex-none">sidebar</div>
-               <div class="flex-stretch"></div>
-               <div class="flex-none">
-                  <a href="#" data-deactivate="#map-drawer">&times;</a>
-               </div>
-               
+   <!-- potholemap page-->
+
+      <section data-role="page" id="potholemap-page">
+      <header data-role="header">
+         <h1>Current Location</h1>
+
+         <ul>
+            <li><a href="#home-page">Home</a></li>
+
+         </ul>
+      </header>
+
+      <div data-role="main">
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25358.374734143275!2d-121.93592274999999!3d37.394636500000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1646695235622!5m2!1sen!2sus" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+
+   <h3>Be aware!</h3>
+      <div class="gallery-box2">
+            <div class="display-grid flex-column">
+
+               <a href="#pothole1-profile-page"><div class="image-nearby-1"></div></a>
+               <a href="#pothole2-profile-page"><div class="image-nearby-2"></div></a>
+
+               <!--
+               <a href="#myboard-page"><div class="image-nav-7"></div></a>
+               <a href="#myboard-page"><div class="image-nav-8"></div></a>
+               -->
             </div>
-            <div class="modal-body">
-               content!
-            </div>
-         </div> -->
+         </div>
+
       </div>
+
+
+      <footer data-role="footer">
+         <ul>
+            <li> <a href="#potholemap-page">Pothole Map</a></li>
+            <li> <a href="#add-pothole-page">Add New</a></li>
+            <li> <a href="#myboard-page">List</a></li>
+         </ul>
+      </footer>
    </section>
 
 
-   <section data-role="page" id="list-page">
+
+
+   <!-- Add more pothole page-->
+
+   <section data-role="page" id="add-pothole-page">
       <header data-role="header">
-         <h1>Your Pothole List</h1>
+         <h1>Add Pothole</h1>
          <ul>
-            <li class="flex-stretch"></li>
-            <li><a href="#" data-activate="#list-add-pothole-modal">Add</a></li>
+            <li><a href="#home-page">Home</a></li>
+
+         </ul>
+      </header>
+      <div data-role="main">
+
+            <div class="form-control">
+               <label for="add-pothole-page" class="form-label">Type of Pothole</label>
+               <input type="text" id="edit-pothole-nickname" data-role="none" class="form-input" placeholder="Need to Report?">
+            </div>
+
+            <div class="form-control">
+               <label for="add-pothole-page" class="form-label">Degree</label>
+               <input type="text" id="edit-pothole-type" data-role="none" class="form-input" placeholder="0-10">
+            </div>
+
+            <div class="form-control">
+               <label for="add-location" class="form-label">Location</label>
+               <input type="text" id="add-location" data-role="none" class="form-input" placeholder="Update Pothole Location">
+            </div>
+
+            <div class="form-control">
+               <label for="add-pothole-comments" class="form-label">Add Note</label>
+               <input type="text" id="add-pothole-description" data-role="none" class="form-input" placeholder="Describe More detail about Pothole">
+            </div>
+
+            <div class="form-control">
+               <label for="Add Picture" class="form-label">Add Picture</label>
+               
+               <img class= "add-picture" src="lib/img/picture.png">
+            </div>
+
+            <a href="#" class="form-button">Register</a>
+
+            </div>
+         </form>
+         
+      <footer data-role="footer">
+         <ul>
+            <li> <a href="#potholemap-page">Pothole Map</a></li>
+            <li> <a href="#add-pothole-page">Add New</a></li>
+            <li> <a href="#myboard-page">List</a></li>
+         </ul>
+      </footer>
+</section>
+
+
+   <!-- My Board page-->
+
+
+   <section data-role="page" id="myboard-page">
+      <header data-role="header">
+         <h1>Profile</h1>
+         <ul>
+            <li><a href="#home-page">Home</a></li>
+
          </ul>
       </header>
       <div data-role="main" class="overscroll">
-         <!-- ul>li*10>a[href=#pothole-profile-page]>{Pothole $} -->
          <ul>
-            <li><a href="#pothole-profile-page">Pothole 1</a></li>
-            <li><a href="#pothole-profile-page">Pothole 2</a></li>
-            <li><a href="#pothole-profile-page">Pothole 3</a></li>
-            <li><a href="#pothole-profile-page">Pothole 4</a></li>
-            <li><a href="#pothole-profile-page">Pothole 5</a></li>
-            <li><a href="#pothole-profile-page">Pothole 6</a></li>
-            <li><a href="#pothole-profile-page">Pothole 7</a></li>
+            <li><a href="#pothole-profile-page">Pothole A</a></li>
+            <li><a href="#pohtole-profile-page">Pothole B</a></li>
+            <li><a href="#pohtole-profile-page">Pothole C</a></li>
+            <li><a href="#pohtole-profile-page">Pothole D</a></li>
+            <li><a href="#pohtole-profile-page">Pothole E</a></li>
+            <li><a href="#pohtole-profile-page">Pothole F</a></li>
 
          </ul>
       </div>
       <footer data-role="footer">
          <ul>
-            <li><a href="#recent-page">Map</a></li>
-            <li><a href="#list-page">List</a></li>
-            <li><a href="#user-profile-page">User Profile</a></li>
-         </ul>
-      </footer>
-
-      <div class="modal" id="list-add-pothole-modal">
-         <div class="modal-back" data-deactivate="#list-add-pothole-modal"></div>
-         <div class="modal-popup">
-            <div class="modal-head">Add your pothole</div>
-            <form class="modal-body overscroll" data-ajax="false">
-               <div class="form-control">
-                  <label for="#list-add-pothole-name" class="form-label">name</label>
-                  <input type="text" class="form-input" placeholder="Type a Name" data-role="none" id="list-add-pothole-name">
-               </div>
-               <div class="form-control">
-                  <label for="#list-add-pothole-type" class="form-label">type</label>
-                  <input type="text" class="form-input" placeholder="Type a Type" data-role="none" id="list-add-pothole-type">
-               </div>
-               <div class="form-control">
-                  <label for="#list-add-pothole-breed" class="form-label">breed</label>
-                  <input type="text" class="form-input" placeholder="Type a Breed" data-role="none" id="list-add-animal-breed">
-               </div>
-               <div class="form-control">
-                  <label for="#list-add-pothole-description" class="form-label">description</label>
-                  <input type="text" class="form-input" placeholder="Type a Description" data-role="none" id="list-add-pothole-description">
-               </div>
-               <!-- <p>Nostrum quos delectus blanditiis aperiam! Fuga excepturi, quibusdam, asperiores quis culpa vel ipsum, voluptatem quas officiis a rem nesciunt voluptatum accusamus deserunt consequuntur similique delectus dicta, quod odio. Laboriosam incidunt exercitationem ipsa necessitatibus enim neque. Quisquam totam rerum quia, nobis deleniti quae, delectus hic. Consectetur laudantium quis sunt aperiam hic quidem, velit dolores praesentium sapiente. Non, architecto, quas. Eaque, modi.</p>
-               <div class="display-flex">
-                  <div class="flex-stretch"></div>
-                  <div class="flex-none"><button class="form-button">click</button></div>
-               </div> -->
-            </form>
-            <div class="modal-foot" style="text-align:right" data-deactivate="#list-add-pothole-modal">
-               Submit
-            </div>
-         </div>
-      </div>
-   </section>
-
-
-   <section data-role="page" id="pothole-profile-page">
-      <header data-role="header">
-         <h1>Your Pothole</h1>
-         <ul>
-            <li><a href="#" data-rel="back">Back</a></li>
-         </ul>
-      </header>
-      <div data-role="main">
-         Pothole profile
-         <a href="#animal-edit-page">Edit</a>
-      </div>
-   </section>
-
-
-   <section data-role="page" id="user-profile-page">
-      <div data-role="main">
-         User profile<br>
-         <a href="#user-edit-page">Edit</a>
-         <br>
-         <a href="#" class="js-logout">Logout</a>
-      </div>
-      <footer data-role="footer">
-         <ul>
-            <li><a href="#recent-page">Map</a></li>
-            <li><a href="#list-page">List</a></li>
-            <li><a href="#user-profile-page">User Profile</a></li>
+            <li> <a href="#pohtolemap-page">Pothole Map</a></li>
+            <li> <a href="#add-pohtole-page">Add New</a></li>
+            <li> <a href="#myboard-page">List</a></li>
          </ul>
       </footer>
    </section>
 
-   <section data-role="page" id="user-edit-page">
-      <header data-role="header">
-         <h1>Edit User</h1>
-         <ul>
-            <li><a href="#" data-rel="back">Back</a></li>
-            <li class="flex-stretch"></li>
-            <li><a href="#list-page">Save</a></li>
-         </ul>
-      </header>
-      <div data-role="main">
-        Form
-      </div>
-      <footer data-role="footer">
-         <ul>
-            <li><a href="#recent-page">Map</a></li>
-            <li><a href="#list-page">List</a></li>
-            <li><a href="#user-profile-page">User Profile</a></li>
-         </ul>
-      </footer>
-   </section>
-   
 </body>
 </html>
