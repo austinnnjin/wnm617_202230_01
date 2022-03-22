@@ -1,4 +1,3 @@
-
 $(() => {
    checkUserId();
 
@@ -6,7 +5,7 @@ $(() => {
    $(document)
 
    // FORM SUBMISSIONS
-   .on("submit", "#login-form", function(e) {
+   .on("submit", "#signin-form", function(e) {
       e.preventDefault();
       checkLoginForm();
    })
