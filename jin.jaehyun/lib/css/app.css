@@ -227,7 +227,7 @@ a:hover {
     width: 172px;
     height: 172px;
     border-radius: 10px;
-    background-image: url(lib/image/1.jpeg);
+    background-image: url(lib/img/1.jpeg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -268,7 +268,7 @@ a:hover {
     width: 172px;
     height: 172px;
     border-radius: 10px;
-    background-image: url(lib/image/5.jpeg);
+    background-image: url(lib/img/5.jpeg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -278,7 +278,7 @@ a:hover {
     width: 172px;
     height: 172px;
     border-radius: 10px;
-    background-image: url(lib/image/6.jpeg);
+    background-image: url(lib/img/6.jpeg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
