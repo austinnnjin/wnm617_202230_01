@@ -14,6 +14,12 @@
    <script src="lib/js/jquery.mobile-1.4.5.min.js"></script>
    <script src="lib/js/app.js"></script>
    <script src="lib/js/signin.js"></script>
+
+       <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+      defer
+    ></script>
+    
 </head>
 
 <body>
@@ -78,43 +84,10 @@
       </div>
    </section>
 
-
-
    <!-- home page-->
    <section data-role="page" id="home-page">
       <header data-role="header">
-         <h1>WAY</h1>
-      </header>
-      <div data-role="main">Your Potholes</div>
-
-        <div data-role="main" class="overscroll">
-        <div class="gallery-box">
-            <div class="display-grid flex-column">
-
-               <a href="#pothole1-profile-page"><div class="image-nav-1"></div></a>
-               <a href="#pothole2-profile-page"><div class="image-nav-2"></div></a>
-               <a href="#pothole3-profile-page"><div class="image-nav-3"></div></a>
-               <a href="#pothole4-profile-page"><div class="image-nav-4"></div></a>
-               <a href="#pothole5-profile-page"><div class="image-nav-5"></div></a>
-               <a href="#pothole6-profile-page"><div class="image-nav-6"></div></a>
-
-            </div>
-         </div>
-   </div>
-      <footer data-role="footer">
-         <ul>
-            <li> <a href="#potholemap-page">Pothole Map</a></li>
-            <li> <a href="#add-pothole-page">Add New</a></li>
-            <li> <a href="#myboard-page">List</a></li>
-         </ul>
-      </footer>
-   </section>
-
-   <!-- potholemap page-->
-
-      <section data-role="page" id="potholemap-page">
-      <header data-role="header">
-         <h1>Current Location</h1>
+         <h1>POTHOLE MAP</h1>
 
          <ul>
             <li><a href="#home-page">Home</a></li>
@@ -141,9 +114,9 @@
 
       <footer data-role="footer">
          <ul>
-            <li> <a href="#potholemap-page">Pothole Map</a></li>
-            <li> <a href="#add-pothole-page">Add New</a></li>
-            <li> <a href="#myboard-page">List</a></li>
+            <li> <a href="#potholemap-page">MAP</a></li>
+            <li> <a href="#add-pothole-page">+</a></li>
+            <li> <a href="#myboard-page">PROFILE</a></li>
          </ul>
       </footer>
    </section>
@@ -196,9 +169,9 @@
          
       <footer data-role="footer">
          <ul>
-            <li> <a href="#potholemap-page">Pothole Map</a></li>
-            <li> <a href="#add-pothole-page">Add New</a></li>
-            <li> <a href="#myboard-page">List</a></li>
+          <li> <a href="#potholemap-page">MAP</a></li>
+            <li> <a href="#add-pothole-page">+</a></li>
+            <li> <a href="#myboard-page">PROFILE</a></li>
          </ul>
       </footer>
 </section>
@@ -228,9 +201,9 @@
       </div>
       <footer data-role="footer">
          <ul>
-            <li> <a href="#pohtolemap-page">Pothole Map</a></li>
-            <li> <a href="#add-pohtole-page">Add New</a></li>
-            <li> <a href="#myboard-page">List</a></li>
+            <li> <a href="#potholemap-page">MAP</a></li>
+            <li> <a href="#add-pothole-page">+</a></li>
+            <li> <a href="#myboard-page">PROFILE</a></li>
          </ul>
       </footer>
    </section>
