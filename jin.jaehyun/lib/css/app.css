@@ -11,7 +11,7 @@
    --font-sans:  'Assistant', sans-serif;
 
    --color-neutral-light:  #F8F4F3;
-   --color-neutral-medium:  #9eb6ff;
+   --color-neutral-medium:  #dce3f7;
    --color-neutral-dark:  #634fd1;
    --color-neutral-darkest:  #3B3A3B;
    --header-height:  3rem;
@@ -60,7 +60,7 @@ a:hover {
 
 .ui-mobile .form-label {
    font-size: 0.8em;
-   color: var(--color-neutral-darkest);
+   color: #3B3A3B;
    margin: 0.5rem 0;
 
 }
@@ -69,7 +69,7 @@ a:hover {
    display: inline-block;
    width: 100%;
    border-width: 0;
-   background-color: var(--color-neutral-light);
+   background-color: var(--color-neutral-medium);
    font: inherit;
    font-weight: 300;
    padding: 0.5em 1em;
@@ -84,7 +84,7 @@ a:hover {
    width: 100%;
    border-width: 0;
    background-color: var(--color-neutral-darkest);
-   color: var(--color-neutral-light);
+   color: var(--color-neutral-medium);
    font: var(--font-serif);
    font-weight: 300;
    padding: 0.5em 1em;
@@ -95,6 +95,26 @@ a:hover {
    border-radius: 30px;
 
 }
+
+.register-button{
+   display: inline-block;
+   width: 50%;
+   border-width: 0;
+   background-color: var(--color-neutral-darkest);
+   color: var(--color-neutral-medium);
+   font: var(--font-serif);
+   font-weight: 300;
+   padding: 0.5em 1em;
+   margin: 0;
+   outline: 0;
+   text-align: center;
+   text-decoration: none;
+   border-radius: 30px;
+
+}
+
+
+
 
 .form-radio {
    display: inline-block;
@@ -123,7 +143,8 @@ a:hover {
 [data-role="main"] {
    flex: 1 1 100%;
    overflow: hidden;
-   position: relative; /*scrolls on its own space*/
+   position: relative;
+   padding:  0 1.6em; 
 }
 
 .ui-header,
@@ -288,3 +309,113 @@ a:hover {
 
 }
 
+#home-page .map-container{
+    /*background: url("../images/google-map.png");
+    z-index:-100;
+    position: static !important; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   
+}
+
+.gallery-box {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2em;
+
+}
+
+.image-nav-1{
+    width: 172px;
+    height: 172px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.image-nav-2{
+    width: 172px;
+    height: 172px;
+    background-image: url(../lib/img/2.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.image-nav-3{
+    width: 172px;
+    height: 172px;
+    background-image: src="lib/img/3.jpeg";
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.image-nav-4{
+    width: 172px;
+    height: 172px;
+    background-image: url(../lib/img/4.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.image-nav-5{
+    width: 172px;
+    height: 172px;
+    background-image: url(../lib/img/5.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.image-nav-6{
+    width: 172px;
+    height: 172px;
+    background-image: url(../lib/img/6.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.display-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 0fr);
+    gap: 8px;
+}
+
+.individual-page{
+   margin-top: 3em;
+   text-align: center;
+
+}
+
+.individual-image {
+   width: 400px;
+    height: 400px;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right:  auto;
+    display: block;
+}
+
+.report-button{
+   display: inline-block;
+   width: 80%;
+   border-width: 0;
+   background-color: var(--color-neutral-dark);
+   color: var(--color-neutral-medium);
+   font: var(--font-serif);
+   font-weight: 300;
+   padding: 0.5em 1em;
+   margin: 0;
+   outline: 0;
+   text-align: center;
+   text-decoration: none;
+   border-radius: 30px;
+
+}
