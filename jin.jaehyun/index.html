@@ -31,7 +31,7 @@
       <div data-role="main" class="display-flex flex-column">
          <div class="flex-stretch"></div>
                   <div style="text-align:center;margin-bottom:10vmin">
-            <img src="lib/img/logo.png" alt="" style="width:50vmin;height:50vmin">
+            <img src="lib/img/logo.png" alt="" style="width:30vmin;height:30vmin">
          </div>
     
             <form id="signin-form" class="form" data-ajax="false">
@@ -98,9 +98,15 @@
       </header>
 
       <div data-role="main">
-      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25358.374734143275!2d-121.93592274999999!3d37.394636500000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1646695235622!5m2!1sen!2sus" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+      <div class="map-container"></div>
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25358.374734143275!2d-121.93592274999999!3d37.394636500000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1646695235622!5m2!1sen!2sus" width="450" height="900" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+   </div>
 
 
+
+<!--
    <h3>Be aware!</h3>
       <div class="gallery-box2">
             <div class="display-grid flex-column">
@@ -113,10 +119,10 @@
 
       </div>
 
-
+-->
       <footer data-role="footer">
          <ul>
-            <li> <a href="#potholemap-page">MAP</a></li>
+            <li> <a href="#home-page">MAP</a></li>
             <li> <a href="#add-pothole-page">+</a></li>
             <li> <a href="#myboard-page">PROFILE</a></li>
          </ul>
@@ -161,17 +167,16 @@
             <div class="form-control">
                <label for="Add Picture" class="form-label">Add Picture</label>
                
-               <img class= "add-picture" src="lib/img/picture.png">
+               <img class= "add-picture" src="lib/img/picture.png" width="400">
             </div>
 
-            <a href="#" class="form-button">Register</a>
-
-            </div>
+            <a href="#" class="register-button">Register</a>
+                </div>
          </form>
          
       <footer data-role="footer">
          <ul>
-          <li> <a href="#potholemap-page">MAP</a></li>
+          <li> <a href="#home-page">MAP</a></li>
             <li> <a href="#add-pothole-page">+</a></li>
             <li> <a href="#myboard-page">PROFILE</a></li>
          </ul>
@@ -190,25 +195,293 @@
 
          </ul>
       </header>
-      <div data-role="main" class="overscroll">
-         <ul>
-            <li><a href="#pothole-profile-page">Pothole A</a></li>
-            <li><a href="#pohtole-profile-page">Pothole B</a></li>
-            <li><a href="#pohtole-profile-page">Pothole C</a></li>
-            <li><a href="#pohtole-profile-page">Pothole D</a></li>
-            <li><a href="#pohtole-profile-page">Pothole E</a></li>
-            <li><a href="#pohtole-profile-page">Pothole F</a></li>
+      
 
-         </ul>
+      <div data-role="main" class="overscroll">
+
+       <div class="gallery-box">
+            <div class="display-grid flex-column">
+
+
+               <a href="#pothole1-profile-page">Pothole A<div><img class= "image-nav-1" src="lib/img/1.jpeg"></div></a>
+               <a href="#pothole2-profile-page">Pothole B<div><img class= "image-nav-2" src="lib/img/2.jpeg"></div></a>
+               <a href="#pothole3-profile-page">Pothole C<div> <img class= "image-nav-3" src="lib/img/3.jpeg"></div></a> 
+               <a href="#pothole4-profile-page">Pothole D<div><img class= "image-nav-4" src="lib/img/4.jpeg"></div></a> 
+               <a href="#pothole5-profile-page">Pothole E<div><img class= "image-nav-5" src="lib/img/5.jpeg"></div></a>
+               <a href="#pothole6-profile-page">Pothole F<div><img class= "image-nav-6" src="lib/img/6.jpeg"></div></a>
+
       </div>
+   </div>
+</div>
+
+
+
       <footer data-role="footer">
          <ul>
-            <li> <a href="#potholemap-page">MAP</a></li>
+            <li> <a href="#home-page">MAP</a></li>
             <li> <a href="#add-pothole-page">+</a></li>
             <li> <a href="#myboard-page">PROFILE</a></li>
          </ul>
       </footer>
    </section>
 
+<section data-role="page" id="pothole1-profile-page">
+      <header data-role="header" class="display-flex overscroll">
+         <h1>Pothole Profile</h1>
+         <ul>
+            <li><a href="#myboard-page">Back</a></li>
+         </ul>
+
+
+      </header>
+         
+
+
+        <div data-role="main" class="overscroll">
+        <div class="individual-page">
+            <img class= "individual-image" src="lib/img/1.jpeg">
+            <h1>Pothole A</h1>
+         </div>
+
+         <div>
+            <h3>Size</h3>
+            <p>4/10</p>
+            <h3>Location </h3>
+            <p>North 1st Street, San Jose, CA</p>
+         </div>
+
+            <div class="form-control">
+               <button type="submit" class="report-button"><a href="https://311.sanjoseca.gov/?osvcProductId=5&osvcProductName=Pothole&page=shell&shell=service-request-create">REPORT</button>
+            </div>
+
+            <div class="make-center">
+            </div>
+            
+         
+   </div>
+
+         <footer data-role="footer">
+         <ul>
+            <li> <a href="#home-page">MAP</a></li>
+            <li> <a href="#add-pothole-page">+</a></li>
+            <li> <a href="#myboard-page">PROFILE</a></li>
+         </ul>
+      </footer>
+   </section>
+
+<section data-role="page" id="pothole2-profile-page">
+      <header data-role="header" class="display-flex overscroll">
+         <h1>Pothole Profile</h1>
+        <ul>
+            <li><a href="#myboard-page">Back</a></li>
+         </ul>
+
+
+
+      </header>
+         
+
+
+        <div data-role="main" class="overscroll">
+        <div class="individual-page">
+            <img class= "individual-image" src="lib/img/2.jpeg">
+            <h1>Pothole B</h1>
+         </div>
+
+         <div>
+            <h3>Size</h3>
+            <p>6/10</p>
+            <h3>Location </h3>
+            <p>4120 Network Cir, Santa Clara, CA</p>
+         </div>
+
+            <div class="form-control">
+               <button type="submit" class="report-button"><a href="https://311.sanjoseca.gov/?osvcProductId=5&osvcProductName=Pothole&page=shell&shell=service-request-create">REPORT</button>
+            </div>
+
+            <div class="make-center">
+            </div>
+            
+         
+   </div>
+
+         <footer data-role="footer">
+         <ul>
+            <li> <a href="#home-page">MAP</a></li>
+            <li> <a href="#add-pothole-page">+</a></li>
+            <li> <a href="#myboard-page">PROFILE</a></li>
+         </ul>
+      </footer>
+   </section>
+
+   <section data-role="page" id="pothole3-profile-page">
+      <header data-role="header" class="display-flex overscroll">
+         <h1>Pothole Profile</h1>
+                 <ul>
+            <li><a href="#myboard-page">Back</a></li>
+         </ul>
+
+      </header>
+        <div data-role="main" class="overscroll">
+        <div class="individual-page">
+            <img class= "individual-image" src="lib/img/3.jpeg">
+            <h1>Pothole C</h1>
+         </div>
+
+         <div>
+            <h3>Size</h3>
+            <p>3/10</p>
+            <h3>Location </h3>
+            <p>400 E Tasman Dr, San Jose, CA</p>
+         </div>
+
+            <div class="form-control">
+               <button type="submit" class="report-button"><a href="https://311.sanjoseca.gov/?osvcProductId=5&osvcProductName=Pothole&page=shell&shell=service-request-create">REPORT</button>
+            </div>
+
+            <div class="make-center">
+            </div>     
+   </div>
+         <footer data-role="footer">
+         <ul>
+            <li> <a href="#home-page">MAP</a></li>
+            <li> <a href="#add-pothole-page">+</a></li>
+            <li> <a href="#myboard-page">PROFILE</a></li>
+         </ul>
+      </footer>
+   </section>
+
+
+
+
+   <section data-role="page" id="pothole4-profile-page">
+      <header data-role="header" class="display-flex overscroll">
+         <h1>Pothole Profile</h1>
+                 <ul>
+            <li><a href="#myboard-page">Back</a></li>
+         </ul>
+
+      </header>
+        <div data-role="main" class="overscroll">
+        <div class="individual-page">
+            <img class= "individual-image" src="lib/img/4.jpeg">
+            <h1>Pothole D</h1>
+         </div>
+
+         <div>
+            <h3>Size</h3>
+            <p>9/10</p>
+            <h3>Location </h3>
+            <p>2655 Seely Ave, San Jose, CA</p>
+         </div>
+
+            <div class="form-control">
+               <button type="submit" class="report-button"><a href="https://311.sanjoseca.gov/?osvcProductId=5&osvcProductName=Pothole&page=shell&shell=service-request-create">REPORT</button>
+            </div>
+
+            <div class="make-center">
+            </div>
+            
+         
+   </div>
+
+         <footer data-role="footer">
+         <ul>
+            <li> <a href="#home-page">MAP</a></li>
+            <li> <a href="#add-pothole-page">+</a></li>
+            <li> <a href="#myboard-page">PROFILE</a></li>
+         </ul>
+      </footer>
+   </section>
+
+   <section data-role="page" id="pothole5-profile-page">
+      <header data-role="header" class="display-flex overscroll">
+         <h1>Pothole Profile</h1>
+                 <ul>
+            <li><a href="#myboard-page">Back</a></li>
+         </ul>
+
+      </header>
+        <div data-role="main" class="overscroll">
+        <div class="individual-page">
+            <img class= "individual-image" src="lib/img/5.jpeg">
+            <h1>Pothole E</h1>
+         </div>
+
+         <div>
+            <h3>Size</h3>
+            <p>10/10</p>
+            <h3>Location </h3>
+            <p>2211 N First St, San Jose, CA</p>
+         </div>
+
+            <div class="form-control">
+               <button type="submit" class="report-button"><a href="https://311.sanjoseca.gov/?osvcProductId=5&osvcProductName=Pothole&page=shell&shell=service-request-create">REPORT</button>
+            </div>
+
+            <div class="make-center">
+            </div>
+            
+         
+   </div>
+
+         <footer data-role="footer">
+         <ul>
+            <li> <a href="#home-page">MAP</a></li>
+            <li> <a href="#add-pothole-page">+</a></li>
+            <li> <a href="#myboard-page">PROFILE</a></li>
+         </ul>
+      </footer>
+   </section>
+
+   <section data-role="page" id="pothole6-profile-page">
+      <header data-role="header" class="display-flex overscroll">
+         <h1>Pothole Profile</h1>
+        <ul>
+            <li><a href="#myboard-page">Back</a></li>
+         </ul>
+
+
+
+      </header>
+         
+
+
+        <div data-role="main" class="overscroll">
+        <div class="individual-page">
+            <img class= "individual-image" src="lib/img/6.jpeg">
+            <h1>Pothole F</h1>
+         </div>
+
+         <div>
+            <h3>Size</h3>
+            <p>2/10</p>
+            <h3>Location </h3>
+            <p>1969 O'Toole Way, San Jose, CA</p>
+         </div>
+
+            <div class="form-control">
+               <button type="submit" class="report-button"><a href="https://311.sanjoseca.gov/?osvcProductId=5&osvcProductName=Pothole&page=shell&shell=service-request-create">REPORT</button>
+            </div>
+
+            <div class="make-center">
+            </div>
+            
+         
+   </div>
+
+         <footer data-role="footer">
+         <ul>
+            <li> <a href="#home-page">MAP</a></li>
+            <li> <a href="#add-pothole-page">+</a></li>
+            <li> <a href="#myboard-page">PROFILE</a></li>
+         </ul>
+      </footer>
+   </section>
+
+
+
+
 </body>
 </html>
+
