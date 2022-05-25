@@ -5,4 +5,4 @@
 ## Important Links
 
 - http://creativebyaustin.com
-- http://creativebyaustin.com/aau/wnm617/jin.jaehyun/lib/index.html
+- http://creativebyaustin.com/aau/wnm617/jin.jaehyun/index.html
