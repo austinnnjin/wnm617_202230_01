@@ -98,7 +98,7 @@ a:hover {
 
 .register-button{
    display: inline-block;
-   width: 50%;
+   width: 100%;
    border-width: 0;
    background-color: var(--color-neutral-darkest);
    color: var(--color-neutral-medium);
